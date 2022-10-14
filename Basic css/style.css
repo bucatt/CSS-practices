@@ -1,0 +1,91 @@
+/* selector { */
+/* propiedad: valor; */
+/* } */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(230, 239, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  width: 70%;
+  margin: 0px auto;
+  border: 1px solid black;
+}
+
+header {
+  background: red;
+  height: 100px;
+  /* width: 100%; */
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  border-bottom: 3px dashed black;
+}
+
+nav ul li {
+  /* display: inline; */
+  float: left;
+  list-style: none;
+  margin: 10px;
+  line-height: 30px;
+}
+
+.clearfix {
+  /* Los elementos no suben cuando hay elementos flotantes */
+  clear: left;
+}
+
+nav {
+  background: lightblue;
+  height: 50px;
+  border: 1px solid black;
+}
+
+#content {
+  float: left;
+  background: green;
+  width: calc(80% - 22px);
+  min-height: 300px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.article {
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.article h2 {
+  font-size: 25px;
+}
+
+.article:first-child {
+  padding-top: 10px;
+  border-top: 1px solid;
+}
+
+aside {
+  background: yellow;
+  float: left;
+  width: calc(20% - 22px);
+  min-height: 300px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+footer {
+  background: black;
+  color: white;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}

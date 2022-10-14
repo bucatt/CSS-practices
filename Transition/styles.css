@@ -1,0 +1,54 @@
+* {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+}
+
+.content {
+  height: 100vh;
+  background-color: #86f;
+  padding: 30px;
+}
+
+.caja {
+  background-color: #025;
+  height: 100px;
+  width: 100px;
+  transition-property: background, left;
+  transition-duration: 2s;
+  transition-delay: 0.2s;
+  margin: 10px;
+  position: relative;
+  left: 0;
+}
+
+.cajas {
+  width: 200px;
+}
+
+.cajas:hover > .caja {
+  left: 95%;
+  background-color: lightgreen;
+}
+
+.caja:first-child {
+  transition-timing-function: linear;
+}
+
+.caja:nth-child(2) {
+  transition-timing-function: ease;
+}
+.caja:nth-child(3) {
+  transition-timing-function: ease-in;
+}
+.caja:nth-child(4) {
+  transition-timing-function: ease-in-out;
+}
+.caja:nth-child(5) {
+  transition-timing-function: ease-out;
+}

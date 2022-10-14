@@ -1,0 +1,58 @@
+* {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.flex-container-stretch {
+  display: flex;
+  height: 100px;
+  align-items: stretch; /* default */
+  justify-content: center;
+  /* -stretch- center flex-start flex-end */
+  border: 3px solid red;
+}
+
+.flex-container-start {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  border: 3px solid red;
+  flex-wrap: wrap;
+  align-items: center;
+  /* -stretch- center flex-start flex-end */
+}
+
+.flex-container-content {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  border: 3px solid red;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  /* -stretch- center flex-start flex-end */
+}
+
+.flex-container-baseline {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  border: 3px solid red;
+  flex-wrap: wrap-reverse;
+  align-content: baseline;
+  /* -stretch- center flex-start flex-end */
+}
+
+.flex-item {
+  background: steelblue;
+  margin: 6px;
+}
+
+.orange {
+  background: orange;
+}
+
+.green {
+  background: yellowgreen;
+}

@@ -1,0 +1,101 @@
+* {
+  font-size: 30px;
+}
+
+.caja1 {
+  height: 200px;
+  width: 200px;
+  background-color: slateblue;
+  margin: auto;
+  margin-top: 100px;
+  transition: background 1s, height 1s, width 1s;
+  transition: all 1s;
+}
+
+.caja2 {
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.caja2:active {
+  background: blue;
+  width: 300px;
+  transition: all 1s;
+}
+
+.caja2 p:lang(es) {
+  background: red;
+}
+
+.caja2 p:lang(en) {
+  background: blue;
+}
+
+.caja1:hover {
+  background: red;
+  height: 300px;
+  width: 300px;
+}
+
+a:link {
+  color: yellow;
+}
+
+a:visited {
+  color: green;
+}
+
+form {
+  margin: 100px auto;
+  background-color: #555;
+  padding: 100px;
+  width: 50%;
+}
+
+input {
+  width: 100%;
+}
+
+input::placeholder {
+  color: red;
+}
+
+input::selection {
+  background-color: orange;
+}
+
+.text {
+  padding: 20px;
+}
+
+.pseudoelementos {
+  margin: auto;
+  width: 300px;
+}
+
+b {
+  width: 100%;
+  background-color: red;
+}
+
+b::before {
+  content: "Esto es un b con un before";
+  background-color: yellow;
+}
+
+b::after {
+  content: "Esto es un b con un after";
+  background-color: aqua;
+}
+/* Sólo funciona con elementos block */
+
+.text::first-line {
+  color: red;
+  font-size: 2em;
+}
+
+.text::first-letter {
+  color: blue;
+}

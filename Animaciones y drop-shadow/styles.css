@@ -1,0 +1,66 @@
+* {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --black-blue: #025;
+  --light-purple: #86f;
+}
+
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+}
+
+img {
+  filter: contrast(100);
+  filter: drop-shadow(0px 0px 10px #000);
+}
+
+.content {
+  height: 100%;
+  background-color: var(--light-purple);
+  padding: 30px;
+}
+
+.caja {
+  background-color: var(--black-blue);
+  height: 100px;
+  width: 100px;
+  animation-name: desplazamiento;
+  animation-duration: 1s;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* animation-fill-mode: forwards; */
+  /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+  /* clip-path: ; */
+}
+
+.caja2 {
+  background-color: #025;
+  height: 60px;
+  width: 60px;
+  transition: transform 1s;
+}
+
+.caja2:hover {
+  transform: scale(2) translate(10px) skew(10deg);
+}
+
+@keyframes desplazamiento {
+  0% {
+    background: blue;
+  }
+
+  50% {
+    background: purple;
+  }
+
+  100% {
+    transform: translate(100vh);
+    background: red;
+  }
+}

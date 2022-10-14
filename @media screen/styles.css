@@ -1,0 +1,33 @@
+* {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+  padding: 15px;
+}
+
+.div-responsive {
+  background-color: #ddf;
+}
+
+@media screen and (min-width: 400px) and (max-width: 650px) {
+  .div-responsive {
+    background: #dfd;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+  .div-responsive {
+    background: #fdd;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .div-responsive {
+    background: #dff;
+  }
+}

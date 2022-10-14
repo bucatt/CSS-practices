@@ -1,0 +1,50 @@
+* {
+  background-color: rgb(231, 168, 31);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  box-sizing: border-box;
+  background-color: brown;
+  /* display: block; */
+  margin: 50px auto;
+  height: 400px;
+  width: 400px;
+  border: 4px solid red;
+}
+
+div h1 {
+  background: none;
+}
+
+div div {
+  height: 75px;
+  width: 75px;
+  background: yellow;
+  position: absolute;
+}
+
+.caja1 {
+  left: 0;
+}
+.caja2 {
+  right: 0;
+}
+.caja3 {
+  left: 0;
+  bottom: 0;
+}
+.caja4 {
+  right: 0;
+  bottom: 0;
+}
+
+.caja5 {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
